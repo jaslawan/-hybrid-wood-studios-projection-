@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050609">
+<meta name="description" content="HYBRID WOOD STUDIOS PROJECTION — plateforme de films et mini-séries de JTCM Entertainment.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/hybridwood_logo.jpeg">
+<link rel="stylesheet" href="styles.css">
+<title>HYBRID WOOD STUDIOS PROJECTION</title>
+</head>
+<body>
+<header class="header"><div class="top">
+ <div class="brand"><img src="assets/hybridwood_studios.jpeg" alt="HYBRID WOOD STUDIOS PROJECTION"><div><strong>HYBRID WOOD STUDIOS PROJECTION</strong><small>JTCM • JTStudi-AI</small></div></div>
+ <nav class="nav">
+  <button onclick="show('home')">Accueil</button><button onclick="show('catalog')">Films</button><button onclick="show('payment')">Paiement</button><button onclick="show('access')">Mon accès</button><a class="nav-admin" href="admin.html">⚙️ Gestion</a>
+ </nav>
+</div></header>
+
+<main>
+<section id="home">
+ <div class="hero"><div class="hero-inner">
+  <img class="hero-logo" src="assets/hybridwood_studios.jpeg" alt="Hybrid Wood Studios">
+  <div class="kicker">Cinéma hybride • Humain & IA • Création sans limites</div>
+  <h1>Vos films. Votre plateforme. Votre public.</h1>
+  <p>Découvrez les productions de HYBRID WOOD STUDIOS PROJECTION et JTCM Entertainment. Une plateforme pensée pour présenter, vendre et diffuser vos films et mini-séries.</p>
+  <div class="actions"><button class="btn" onclick="show('catalog')">🎬 Voir le catalogue</button><button class="btn secondary" onclick="show('payment')">💳 Acheter un accès</button></div>
+ </div></div>
+ <div class="container">
+  <div class="section-head"><div><h2>🔥 À l’affiche</h2><div class="muted">Les nouvelles productions que vous venez d’ajouter.</div></div></div>
+  <div class="grid" id="homeGrid"></div>
+ </div>
+</section>
+
+<section id="catalog" class="hidden"><div class="container">
+ <div class="section-head"><div><h2>🎬 Catalogue HYBRID WOOD</h2><div class="muted">Films, séries et mini-séries.</div></div></div>
+ <div class="grid" id="catalogGrid"></div>
+</div></section>
+
+<section id="payment" class="hidden"><div class="panel">
+ <h2>💳 Acheter un accès</h2>
+ <p class="muted">Choisissez une production et votre moyen de paiement.</p>
+ <div class="notice">⚙️ <b>Important :</b> cette version est prête pour l’intégration du paiement, mais le paiement réel et l’ouverture automatique de la vidéo nécessitent un compte marchand + serveur + webhook. Ne demandez jamais le PIN d’un client.</div>
+ <label>Production</label><select id="paymentFilm"></select>
+ <label>Moyen de paiement</label>
+ <div class="methods"><div class="method"><b>MonCash</b><span>À connecter au compte marchand</span></div><div class="method"><b>NatCash</b><span>À connecter au compte marchand</span></div><div class="method"><b>Carte</b><span>À connecter à un prestataire compatible</span></div></div>
+ <button class="btn" onclick="paymentDemo()">Continuer vers le paiement</button>
+ <p id="paymsg"></p>
+</div></section>
+
+<section id="access" class="hidden"><div class="panel">
+ <h2>🔐 Mon accès</h2><p class="muted">Dans la version finale, le code ou le droit d’accès sera créé automatiquement après confirmation du paiement.</p>
+ <input id="code" placeholder="WOOD-XXXX-XXXX">
+ <button class="btn" style="margin-top:12px" onclick="verify()">Vérifier</button>
+ <p id="accessMsg"></p>
+</div></section>
+
+<section id="watch" class="hidden"><div class="panel">
+ <h2 id="watchTitle">🎬 Projection</h2>
+ <div class="player">
+  <div style="text-align:center">LECTEUR VIDÉO HYBRID WOOD<br><small>Ajoutez vos fichiers vidéo privés dans la version serveur.</small></div>
+  <div class="watermark">HYBRID WOOD • ACCÈS PROTÉGÉ</div>
+ </div>
+ <p class="muted">La vidéo ne doit pas être mise directement dans le HTML public si elle est payante. Elle doit être servie depuis un stockage/streaming privé après validation du paiement.</p>
+</div></section>
+</main>
+
+<div id="filmModal" class="modal hidden"><div class="modal-box">
+ <button class="close" onclick="closeModal()">✕</button>
+ <img id="modalPoster" class="poster" style="max-height:390px;object-fit:contain;background:#050609" alt="">
+ <h2 id="modalTitle"></h2><p id="modalDesc" class="muted"></p><p id="modalPrice"></p>
+ <button class="btn" onclick="choosePayment()">💳 Acheter l’accès</button>
+</div></div>
+
+<footer><b>HYBRID WOOD STUDIOS PROJECTION</b> — JTCM Entertainment<br>Créer • Inspirer • Divertir<br>
+<a href="https://whatsapp.com/channel/0029VbCj5Xj3wtbDyGwjcw0O" target="_blank" rel="noopener">Chaîne WhatsApp</a> ·
+<a href="https://call.whatsapp.com/video/PnzXcDzFEOCHqJlYGPM0Iz" target="_blank" rel="noopener">Contacter la clientèle</a>
+<br><small>© <span id="year"></span> HYBRID WOOD STUDIOS PROJECTION</small></footer>
+<script src="app.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");});</script>
+</body></html>

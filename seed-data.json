@@ -1,0 +1,90 @@
+{
+  "app": {
+    "name": "HYBRID WOOD STUDIOS PROJECTION",
+    "shortName": "HYBRID WOOD",
+    "slogan": "Cinéma hybride • Humain & IA • Création sans limites",
+    "currency": "HTG",
+    "supportWhatsApp": "https://call.whatsapp.com/video/PnzXcDzFEOCHqJlYGPM0Iz",
+    "whatsappChannel": "https://whatsapp.com/channel/0029VbCj5Xj3wtbDyGwjcw0O",
+    "background": "assets/platform_background.jpg"
+  },
+  "films": [
+    {
+      "id": "autre-homme",
+      "title": "L’AUTRE HOMME",
+      "subtitle": "LÒT MOUN NAN",
+      "type": "Mini-série • 8 épisodes",
+      "price": 250,
+      "poster": "assets/autre_homme.jpeg",
+      "description": "Nathan Delorme découvre qu’un autre homme semble vivre sa vie à sa place. Une histoire de double identité, de mensonges et de secrets.",
+      "status": "Disponible prochainement",
+      "videoUrl": ""
+    },
+    {
+      "id": "annie",
+      "title": "ANNIE",
+      "subtitle": "Yon sekrè ka chanje yon lavi pou tout tan.",
+      "type": "Mini-série",
+      "price": 250,
+      "poster": "assets/annie.jpeg",
+      "description": "Annie est une jeune élève qui rêve d’une vie meilleure. Entre famille, amitiés et secrets, elle découvre une vérité qui change tout.",
+      "status": "À venir",
+      "videoUrl": ""
+    },
+    {
+      "id": "ombre-matrice",
+      "title": "L’OMBRE NOIRE DE LA MATRICE",
+      "subtitle": "LONBRAY NWA MATRÈS LA",
+      "type": "Mini-série • Saison 1",
+      "price": 300,
+      "poster": "assets/ombre_noire_matrice.jpeg",
+      "description": "En 2042, Victor Lenoir découvre une organisation secrète utilisant une intelligence artificielle capable d’influencer les décisions humaines.",
+      "status": "Août 2026",
+      "videoUrl": ""
+    },
+    {
+      "id": "amour-frontieres",
+      "title": "L’AMOUR AU-DELÀ DES FRONTIÈRES",
+      "subtitle": "Il était une fois sur Mars",
+      "type": "Film",
+      "price": 300,
+      "poster": "assets/lamour_poster.png",
+      "description": "Une histoire d’amour qui traverse les frontières et les distances, produite par JTCM Entertainment.",
+      "status": "Catalogue",
+      "videoUrl": ""
+    },
+    {
+      "id": "inconnu-connu",
+      "title": "L’INCONNU CONNU",
+      "subtitle": "",
+      "type": "Film",
+      "price": 200,
+      "poster": "assets/inconnu_connu.jpeg",
+      "description": "Une production du catalogue HYBRID WOOD STUDIOS PROJECTION.",
+      "status": "Catalogue",
+      "videoUrl": ""
+    },
+    {
+      "id": "18-heures",
+      "title": "18 TE — 18 HEURES",
+      "subtitle": "",
+      "type": "Série",
+      "price": 300,
+      "poster": "assets/18te.jpeg",
+      "description": "Une enquête sous tension autour d’une affaire qui doit être résolue en temps limité.",
+      "status": "Catalogue",
+      "videoUrl": ""
+    },
+    {
+      "id": "zile-sekre",
+      "title": "ZILE SEKRÈ ENTÈDI",
+      "subtitle": "ÎLE AUX SECRETS INTERDITS",
+      "type": "Série",
+      "price": 250,
+      "poster": "assets/zile_sekre.jpeg",
+      "description": "Une île, des secrets et des révélations qui bouleversent les personnages.",
+      "status": "Catalogue",
+      "videoUrl": ""
+    }
+  ]
+}

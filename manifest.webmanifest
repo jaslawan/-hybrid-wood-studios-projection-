@@ -1,0 +1,17 @@
+{
+  "name": "HYBRID WOOD STUDIOS PROJECTION",
+  "short_name": "Hybrid Wood",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050609",
+  "theme_color": "#050609",
+  "description": "Plateforme de films et mini-séries HYBRID WOOD STUDIOS PROJECTION.",
+  "icons": [
+    {
+      "src": "assets/hybridwood_logo.jpeg",
+      "sizes": "1080x607",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

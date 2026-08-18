@@ -1,0 +1,32 @@
+AUTOMATISATION DU PAIEMENT — CE QUI MANQUE POUR LE VRAI SYSTÈME
+
+Le fichier HTML ne peut pas, à lui seul, savoir si une personne a réellement payé.
+Le bouton « Acheter » ne doit donc pas donner accès à une vidéo payante directement.
+
+Architecture recommandée:
+
+CLIENT
+  ↓
+Choisit un film
+  ↓
+Paiement MonCash / NatCash / carte
+  ↓
+PRESTATAIRE DE PAIEMENT
+  ↓ webhook sécurisé
+SERVEUR HYBRID WOOD
+  ↓
+Vérifie le montant + référence + film
+  ↓
+Crée l'achat dans la base de données
+  ↓
+Crée automatiquement un droit d'accès
+  ↓
+Le client ouvre « Mon accès »
+  ↓
+Le serveur autorise le streaming privé
+
+Pour la vidéo, ne placez pas un fichier MP4 payant dans le dossier public du site.
+Utilisez un stockage/streaming privé et des liens temporaires signés.
+
+Je peux préparer cette partie dès que le prestataire de paiement choisi est connu.
+Vous n'avez pas besoin de m'envoyer votre mot de passe ou votre PIN. Les clés secrètes doivent rester privées et être ajoutées uniquement sur le serveur.
